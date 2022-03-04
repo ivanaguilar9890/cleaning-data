@@ -1,6 +1,6 @@
 # Cleaning-data: Changelog
 
-In this repository I have this readme/changelog where I go over the changes I made, the original csv file prior to changing anything, and the file after I was done.
+In this repository I have this readme/changelog where I go over the changes I made (or didn't make - check bottom), the original csv file prior to changing anything, and the file after I was done.
 ___
 Data downloaded from: https://www.askamanager.org/2021/04/how-much-money-do-you-make-4.html
 ___
