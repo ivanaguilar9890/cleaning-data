@@ -1,6 +1,9 @@
 # Cleaning-data: Changelog
 
-Description: Data downloaded from: https://www.askamanager.org/2021/04/how-much-money-do-you-make-4.html
+In this repository I have this readme/changelog where I go over the changes I made, the original csv file prior to changing anything, and the file after I was done.
+___
+Data downloaded from: https://www.askamanager.org/2021/04/how-much-money-do-you-make-4.html
+___
 
 Change UTF-8 to Unicode Encoding.
 
@@ -33,6 +36,7 @@ Column: Currency - other
 
 Fix City Values
   -	Some individuals did not want to enter their city so they entered data as random characters, gave vague answers (ex. “City” or “large city”), or wrote some variation of “Rather not say.” For all these entries I rewrote them as “Rather not say.” Reasoning for this is that for the most part these individuals did not want to reveal too much information so “Rather not say” standardizes this sentiment for future use.
+  -	Changed some values where users entered redundant information e.g. “Los Angeles, CA” and also put "California" under "State" so change “Los Angeles, CA” to just "Los Angeles"
 
 
 Fix Country Values
@@ -43,5 +47,5 @@ Fix Country Values
 
 Possible Improvements?
    - A central question is “Where do you work?” Some individuals answered this question by writing some variation that “even though they lived in Country A, they worked for a company in Country B”, or “worked remote.” However, this could be improved by creating additional columns such as “Remote?” and “Remote Location.” The reason why I didn’t do so is because some users entered their information “correctly” even though they also work remotely. So if these columns are created then we might assume we have all remote jobs when that is not the case. In short, it could lead to some issues with how we analyze data. I decided to leave as is, as ultimately it depends how a user/analyst will want to use the data. In other words, they can decide for themselves how they want to fix this problem and be conscious of how their solution (or lack thereof) may impact their analysis.
-   - For the city column users would say things like “a suburb near Los Angeles.” Should we then change their answer to just “Los Angeles?” or something like “Not Specified”? In either case there is a possibility of misrepresenting a certain job market so again it should befall on the user/analyst to  decide how to fix this issue. Similarly Users would enter the same city differently e.g. “Los Angeles” vs “Los Angeles, CA” so rewrite to just City
+   - For the city column users would say things like “a suburb near Los Angeles.” Should we then change their answer to just “Los Angeles?” or something like “Not Specified”? In either case there is a possibility of misrepresenting a certain job market so again it should befall on the user/analyst to  decide how to fix this issue.
    - No changes were done to Job industries as the initial form had users click from a list of options. One option was “Other” and users were allowed to enter their own industry. Therefore, a possible improvement is to standardize these other industries as the form had done. Downside to this is that we/I would have to decide where a job could be placed and may not properly represent a person’s actual Job Industry.  For example, one user entered “‘Government’ - Lobbying”.  If we wanted to be strict, would we place them under the existing “Government and Public Administration” option or be lax and would we need to create a new “Lobbying” option? If we go with the latter option it might be the case that some people would have preferred that as opposed to their earlier choice - at which point we are underrepresented people in that industry. So similar to before this question should befall on the user/analyst so that they know how their fix (or lack thereof) will impact their analysis.
