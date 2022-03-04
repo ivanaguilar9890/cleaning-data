@@ -4,7 +4,12 @@ In this repository I have this readme/changelog where I go over the changes I ma
 ___
 Data downloaded from: https://www.askamanager.org/2021/04/how-much-money-do-you-make-4.html
 ___
-
+Screenshot of data before any changes were made
+![Before Changes](/Clean-Data/Before.png)
+___
+Screenshot of data after changes were made
+![After Changes](/Clean-Data/After.png)
+___
 Change UTF-8 to Unicode Encoding.
 
   - Some people used letter accents so to display data correctly we need to change encoding.
